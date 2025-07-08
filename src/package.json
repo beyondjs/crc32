@@ -5,8 +5,8 @@
 	"version": "0.0.1",
 	"license": "MIT",
 	"repository": "https://github.com/beyondjs/crc32",
-	"exports": {
-		".": "./index.js"
-	},
-	"dependencies": {}
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "~24.0.10"
+	}
 }

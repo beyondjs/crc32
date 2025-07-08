@@ -3,7 +3,7 @@ const CRC32_TABLE =
 		.split(' ')
 		.map(s => parseInt(s, 16));
 
-module.exports = function (input) {
+export function crc32(input: string | Buffer): number {
 	let output = -1;
 	input = Buffer.isBuffer(input) ? input : Buffer.from(input, 'binary');
 	input.forEach(c => {
@@ -11,4 +11,4 @@ module.exports = function (input) {
 	});
 
 	return (output ^ -1) >>> 0;
-};
+}
