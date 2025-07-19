@@ -27,7 +27,7 @@ jobs:
               run: npm install
 
             - name: Build package
-              run: beyond build --pkg=@beyond-js/equal --distribution=npm --logs
+              run: beyond build --pkg=@beyond-js/crc32 --distribution=npm --logs
 
             - name: Publish to NPM
               env:
