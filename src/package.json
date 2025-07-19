@@ -6,6 +6,9 @@
 	"license": "MIT",
 	"repository": "https://github.com/beyondjs/crc32",
 	"dependencies": {},
+	"modules": {
+		"path": "modules"
+	},
 	"devDependencies": {
 		"@types/node": "~24.0.10"
 	}
