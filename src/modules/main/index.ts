@@ -3,10 +3,10 @@ const CRC32_TABLE =
 		.split(' ')
 		.map(s => parseInt(s, 16));
 
-export function crc32(input: string | Buffer): number {
+export function crc32(input: string | any): number {
 	let output = -1;
 	input = Buffer.isBuffer(input) ? input : Buffer.from(input, 'binary');
-	input.forEach(c => {
+	input.forEach((c: number) => {
 		output = (output >>> 8) ^ CRC32_TABLE[(output ^ c) & 0xff];
 	});
 

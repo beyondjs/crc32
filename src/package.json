@@ -9,6 +9,29 @@
 	"modules": {
 		"path": "modules"
 	},
+	"deployment": {
+		"distributions": [
+			{
+				"name": "web",
+				"platform": "web",
+				"environment": "local",
+				"ports": {
+					"bundles": 1110
+				}
+			},
+			{
+				"name": "node",
+				"platform": "node",
+				"environment": "local",
+				"ports": {
+					"bundles": 1330
+				},
+				"ts": {
+					"compiler": "tsc"
+				}
+			}
+		]
+	},
 	"devDependencies": {
 		"@types/node": "~24.0.10"
 	}
