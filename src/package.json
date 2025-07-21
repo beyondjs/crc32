@@ -5,7 +5,6 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"repository": "https://github.com/beyondjs/crc32",
-	"dependencies": {},
 	"modules": {
 		"path": "modules"
 	},
@@ -31,6 +30,9 @@
 				}
 			}
 		]
+	},
+	"dependencies": {
+		"@beyond-js/kernel": "^0.1.12"
 	},
 	"devDependencies": {
 		"@types/node": "~24.0.10"
