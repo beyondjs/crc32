@@ -35,6 +35,6 @@
 		"@beyond-js/kernel": "^0.1.12"
 	},
 	"devDependencies": {
-		"@types/node": "~23.3.0"
+		"@types/node": "~20.11.0"
 	}
 }
