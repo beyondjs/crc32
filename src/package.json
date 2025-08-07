@@ -23,7 +23,7 @@
 				"platform": "node",
 				"environment": "local",
 				"ports": {
-					"bundles": 1330
+					"bundles": 1111
 				},
 				"ts": {
 					"compiler": "tsc"
