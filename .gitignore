@@ -3,4 +3,3 @@ node_modules
 .beyond
 .vscode
 .env
-package-lock.json
