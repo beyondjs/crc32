@@ -3,7 +3,13 @@ const CRC32_TABLE =
 		.split(' ')
 		.map(s => parseInt(s, 16));
 
-export function crc32(input: string | any): number {
+/**
+ * The unsigned 32-bit CRC of the bytes of a Buffer. A string is converted with Node's `binary` (Latin-1)
+ * encoding, so a character above U+00FF is truncated: give a Buffer when the encoding matters.
+ *
+ * @throws When the input is neither a Buffer nor a string that Buffer.from accepts
+ */
+export /*bundle*/ function crc32(input: Buffer | string): number {
 	let output = -1;
 	input = Buffer.isBuffer(input) ? input : Buffer.from(input, 'binary');
 	input.forEach((c: number) => {
